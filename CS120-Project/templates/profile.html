@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile - Stroke Management System{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">User Information</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Username:</strong> {{ user.username }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+                <p><strong>Last Login:</strong> {{ user.last_login|date:"M d, Y H:i" }}</p>
+                <p><strong>Date Joined:</strong> {{ user.date_joined|date:"M d, Y" }}</p>
+                
+                <div class="mt-3">
+                    <a href="{% url 'admin:auth_user_change' user.pk %}" class="btn btn-primary">
+                        <i class="fas fa-edit me-2"></i>Edit Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        {% if is_neurologist %}
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Neurologist Information</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>License Number:</strong> {{ neurologist.license_number }}</p>
+                <p><strong>Hospital Affiliation:</strong> {{ neurologist.hospital_affiliation }}</p>
+                <p><strong>Phone Number:</strong> {{ neurologist.phone_number }}</p>
+                <p><strong>Status:</strong>
+                    {% if neurologist.is_available %}
+                    <span class="badge bg-success">Available</span>
+                    {% else %}
+                    <span class="badge bg-danger">Unavailable</span>
+                    {% endif %}
+                </p>
+                
+                <div class="mt-3">
+                    <a href="{% url 'admin:neurologists_neurologist_change' neurologist.pk %}" class="btn btn-primary">
+                        <i class="fas fa-edit me-2"></i>Edit Neurologist Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Become a Neurologist</h5>
+            </div>
+            <div class="card-body">
+                <p>You are currently registered as a regular user. Would you like to become a neurologist?</p>
+                <a href="{% url 'admin:neurologists_neurologist_add' %}" class="btn btn-primary">
+                    <i class="fas fa-user-md me-2"></i>Register as Neurologist
+                </a>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Recent Activity</h5>
+            </div>
+            <div class="card-body">
+                {% if is_neurologist %}
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Patient</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for consultation in neurologist.consultations.all|slice:":5" %}
+                            <tr>
+                                <td>{{ consultation.created_at|date:"M d, Y" }}</td>
+                                <td>{{ consultation.patient.name }}</td>
+                                <td>
+                                    <span class="status-badge status-{{ consultation.status|lower }}">
+                                        {{ consultation.get_status_display }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="{% url 'consultation_detail' consultation.pk %}" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No consultations yet</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <p>No recent activity to display.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

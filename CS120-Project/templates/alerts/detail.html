@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ alert.title }} - Alert Details{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>{{ alert.title }}</h2>
+    <div class="btn-group">
+        <a href="{% url 'admin:alerts_alert_change' alert.pk %}" class="btn btn-primary">
+            <i class="fas fa-edit me-2"></i>Edit Alert
+        </a>
+        <a href="{% url 'admin:alerts_alert_delete' alert.pk %}" class="btn btn-danger">
+            <i class="fas fa-trash me-2"></i>Delete
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Alert Information</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Priority:</strong>
+                    <span class="priority-badge priority-{{ alert.priority|lower }}">
+                        {{ alert.get_priority_display }}
+                    </span>
+                </p>
+                <p><strong>Status:</strong>
+                    <span class="status-badge status-{{ alert.status|lower }}">
+                        {{ alert.get_status_display }}
+                    </span>
+                </p>
+                <p><strong>Created By:</strong> {{ alert.created_by.get_full_name }}</p>
+                <p><strong>Created At:</strong> {{ alert.created_at|date:"M d, Y H:i" }}</p>
+                <p><strong>Last Updated:</strong> {{ alert.updated_at|date:"M d, Y H:i" }}</p>
+                {% if alert.acknowledged_at %}
+                <p><strong>Acknowledged At:</strong> {{ alert.acknowledged_at|date:"M d, Y H:i" }}</p>
+                {% endif %}
+                {% if alert.resolved_at %}
+                <p><strong>Resolved At:</strong> {{ alert.resolved_at|date:"M d, Y H:i" }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Recipients</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    {% for recipient in alert.recipients.all %}
+                    <li class="list-group-item">{{ recipient.get_full_name }}</li>
+                    {% empty %}
+                    <li class="list-group-item">No recipients assigned</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Alert Message</h5>
+            </div>
+            <div class="card-body">
+                <p>{{ alert.message }}</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Notification Logs</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Recipient</th>
+                                <th>Sent At</th>
+                                <th>Status</th>
+                                <th>Method</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for log in notification_logs %}
+                            <tr>
+                                <td>{{ log.recipient.get_full_name }}</td>
+                                <td>{{ log.sent_at|date:"M d, Y H:i" }}</td>
+                                <td>
+                                    {% if log.delivery_status == 'delivered' %}
+                                    <span class="badge bg-success">Delivered</span>
+                                    {% elif log.delivery_status == 'failed' %}
+                                    <span class="badge bg-danger">Failed</span>
+                                    {% else %}
+                                    <span class="badge bg-warning">Sent</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ log.notification_method|title }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No notification logs available</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

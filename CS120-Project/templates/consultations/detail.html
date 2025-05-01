@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}Consultation Details - Stroke Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Consultation Details</h2>
+    <div class="btn-group">
+        <a href="{% url 'admin:neurologists_consultation_change' consultation.pk %}" class="btn btn-primary">
+            <i class="fas fa-edit me-2"></i>Edit Consultation
+        </a>
+        <a href="{% url 'admin:neurologists_consultation_delete' consultation.pk %}" class="btn btn-danger">
+            <i class="fas fa-trash me-2"></i>Delete
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Basic Information</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Patient:</strong> {{ consultation.patient.name }}</p>
+                <p><strong>Neurologist:</strong> Dr. {{ consultation.neurologist.user.get_full_name }}</p>
+                <p><strong>Status:</strong>
+                    <span class="status-badge status-{{ consultation.status|lower }}">
+                        {{ consultation.get_status_display }}
+                    </span>
+                </p>
+                <p><strong>Created:</strong> {{ consultation.created_at|date:"M d, Y H:i" }}</p>
+                <p><strong>Last Updated:</strong> {{ consultation.updated_at|date:"M d, Y H:i" }}</p>
+                {% if consultation.completed_at %}
+                <p><strong>Completed:</strong> {{ consultation.completed_at|date:"M d, Y H:i" }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Diagnosis and Recommendations</h5>
+            </div>
+            <div class="card-body">
+                <h6>Diagnosis</h6>
+                <p>{{ consultation.diagnosis|default:"No diagnosis provided" }}</p>
+                <h6>Recommendations</h6>
+                <p>{{ consultation.recommendations|default:"No recommendations provided" }}</p>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Treatment Orders</h5>
+                <a href="{% url 'admin:neurologists_treatmentorder_add' %}?consultation={{ consultation.pk }}" class="btn btn-sm btn-primary">
+                    <i class="fas fa-plus me-2"></i>Add Treatment Order
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Treatment Type</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Instructions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in treatment_orders %}
+                            <tr>
+                                <td>{{ order.treatment_type }}</td>
+                                <td>
+                                    <span class="priority-badge priority-{{ order.priority|lower }}">
+                                        {{ order.get_priority_display }}
+                                    </span>
+                                </td>
+                                <td>
+                                    {% if order.is_completed %}
+                                    <span class="badge bg-success">Completed</span>
+                                    {% else %}
+                                    <span class="badge bg-warning">Pending</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ order.instructions|truncatechars:50 }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No treatment orders available</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Test Orders</h5>
+                <a href="{% url 'admin:neurologists_testorder_add' %}?consultation={{ consultation.pk }}" class="btn btn-sm btn-primary">
+                    <i class="fas fa-plus me-2"></i>Add Test Order
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Test Name</th>
+                                <th>Status</th>
+                                <th>Instructions</th>
+                                <th>Results</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in test_orders %}
+                            <tr>
+                                <td>{{ order.test_name }}</td>
+                                <td>
+                                    {% if order.is_completed %}
+                                    <span class="badge bg-success">Completed</span>
+                                    {% else %}
+                                    <span class="badge bg-warning">Pending</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ order.instructions|truncatechars:50 }}</td>
+                                <td>{{ order.results|truncatechars:50|default:"No results yet" }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No test orders available</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

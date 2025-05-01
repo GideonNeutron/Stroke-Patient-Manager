@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - Stroke Management System{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-user-injured text-primary me-2"></i>Patients
+                </h5>
+                <h2 class="card-text">{{ patients_count }}</h2>
+                <a href="{% url 'patients_list' %}" class="btn btn-primary btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-user-md text-primary me-2"></i>Neurologists
+                </h5>
+                <h2 class="card-text">{{ neurologists_count }}</h2>
+                <a href="{% url 'neurologists_list' %}" class="btn btn-primary btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-comments text-primary me-2"></i>Active Consultations
+                </h5>
+                <h2 class="card-text">{{ active_consultations_count }}</h2>
+                <a href="{% url 'consultations_list' %}" class="btn btn-primary btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="fas fa-bell text-primary me-2"></i>Active Alerts
+                </h5>
+                <h2 class="card-text">{{ active_alerts_count }}</h2>
+                <a href="{% url 'alerts_list' %}" class="btn btn-primary btn-sm">View All</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Recent Consultations</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Patient</th>
+                                <th>Neurologist</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for consultation in recent_consultations %}
+                            <tr>
+                                <td>{{ consultation.patient.name }}</td>
+                                <td>Dr. {{ consultation.neurologist.user.get_full_name }}</td>
+                                <td>
+                                    <span class="status-badge status-{{ consultation.status|lower }}">
+                                        {{ consultation.get_status_display }}
+                                    </span>
+                                </td>
+                                <td>{{ consultation.created_at|date:"M d, Y" }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No recent consultations</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Recent Alerts</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for alert in recent_alerts %}
+                            <tr>
+                                <td>{{ alert.title }}</td>
+                                <td>
+                                    <span class="priority-badge priority-{{ alert.priority|lower }}">
+                                        {{ alert.get_priority_display }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-badge status-{{ alert.status|lower }}">
+                                        {{ alert.get_status_display }}
+                                    </span>
+                                </td>
+                                <td>{{ alert.created_at|date:"M d, Y" }}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4" class="text-center">No recent alerts</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

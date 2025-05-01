@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Dr. {{ neurologist.user.get_full_name }} - Neurologist Details{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Dr. {{ neurologist.user.get_full_name }}</h2>
+    <div class="btn-group">
+        <a href="{% url 'admin:neurologists_neurologist_change' neurologist.pk %}" class="btn btn-primary">
+            <i class="fas fa-edit me-2"></i>Edit Neurologist
+        </a>
+        <a href="{% url 'admin:neurologists_neurologist_delete' neurologist.pk %}" class="btn btn-danger">
+            <i class="fas fa-trash me-2"></i>Delete
+        </a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">Basic Information</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>License Number:</strong> {{ neurologist.license_number }}</p>
+                <p><strong>Hospital Affiliation:</strong> {{ neurologist.hospital_affiliation }}</p>
+                <p><strong>Phone Number:</strong> {{ neurologist.phone_number }}</p>
+                <p><strong>Status:</strong>
+                    {% if neurologist.is_available %}
+                    <span class="badge bg-success">Available</span>
+                    {% else %}
+                    <span class="badge bg-danger">Unavailable</span>
+                    {% endif %}
+                </p>
+                <p><strong>Email:</strong> {{ neurologist.user.email }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">Consultations</h5>
+                <a href="{% url 'admin:neurologists_consultation_add' %}?neurologist={{ neurologist.pk }}" class="btn btn-sm btn-primary">
+                    <i class="fas fa-plus me-2"></i>Add Consultation
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Patient</th>
+                                <th>Status</th>
+                                <th>Diagnosis</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for consultation in consultations %}
+                            <tr>
+                                <td>{{ consultation.created_at|date:"M d, Y" }}</td>
+                                <td>{{ consultation.patient.name }}</td>
+                                <td>
+                                    <span class="status-badge status-{{ consultation.status|lower }}">
+                                        {{ consultation.get_status_display }}
+                                    </span>
+                                </td>
+                                <td>{{ consultation.diagnosis|truncatechars:50 }}</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="{% url 'consultation_detail' consultation.pk %}" class="btn btn-sm btn-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="{% url 'admin:neurologists_consultation_change' consultation.pk %}" class="btn btn-sm btn-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="5" class="text-center">No consultations available</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

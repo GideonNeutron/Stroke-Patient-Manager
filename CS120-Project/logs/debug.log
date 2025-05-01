@@ -1,0 +1,429 @@
+INFO 2025-04-25 20:21:16,024 autoreload 1272 24896 Watching for file changes with StatReloader
+INFO 2025-04-25 20:21:50,852 autoreload 17148 32712 Watching for file changes with StatReloader
+WARNING 2025-04-25 20:22:35,172 log 17148 31700 Not Found: /
+WARNING 2025-04-25 20:22:35,175 basehttp 17148 31700 "GET / HTTP/1.1" 404 2735
+WARNING 2025-04-25 20:22:36,643 log 17148 31700 Not Found: /favicon.ico
+WARNING 2025-04-25 20:22:36,644 basehttp 17148 31700 "GET /favicon.ico HTTP/1.1" 404 2786
+INFO 2025-04-25 20:22:41,622 basehttp 17148 31700 "GET /admin HTTP/1.1" 301 0
+INFO 2025-04-25 20:22:41,705 basehttp 17148 23796 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-04-25 20:22:41,825 basehttp 17148 23796 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-04-25 20:22:42,014 basehttp 17148 32440 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-25 20:22:42,016 basehttp 17148 23796 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-25 20:22:42,022 basehttp 17148 23796 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-04-25 20:22:42,022 basehttp 17148 32440 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-25 20:22:42,032 basehttp 17148 32440 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-25 20:22:42,033 basehttp 17148 23796 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-25 20:22:42,039 basehttp 17148 32440 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-25 20:22:59,621 basehttp 17148 8048 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-04-25 20:22:59,656 basehttp 17148 8048 "GET /admin/ HTTP/1.1" 200 13110
+INFO 2025-04-25 20:22:59,707 basehttp 17148 8048 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-04-25 20:22:59,850 basehttp 17148 8048 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-25 20:22:59,850 basehttp 17148 3144 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-04-25 20:23:26,335 basehttp 17148 25196 "GET /admin/neurologists/consultation/ HTTP/1.1" 200 14450
+INFO 2025-04-25 20:23:26,415 basehttp 17148 25196 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-04-25 20:23:26,446 basehttp 17148 25196 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-25 20:23:26,461 basehttp 17148 25196 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-25 20:23:26,466 basehttp 17148 25196 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-25 20:23:26,474 basehttp 17148 25196 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-25 20:23:26,479 basehttp 17148 25196 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-25 20:23:26,483 basehttp 17148 25196 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-25 20:23:26,486 basehttp 17148 25196 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-25 20:23:26,489 basehttp 17148 25196 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-25 20:23:26,495 basehttp 17148 25196 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-25 20:23:26,498 basehttp 17148 25196 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-04-25 20:23:26,594 basehttp 17148 25196 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-25 20:23:26,658 basehttp 17148 25196 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-25 20:23:26,658 basehttp 17148 12400 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-04-25 20:23:31,582 basehttp 17148 12400 "GET /admin/neurologists/consultation/add/ HTTP/1.1" 200 18995
+INFO 2025-04-25 20:23:31,649 basehttp 17148 12400 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-25 20:23:31,661 basehttp 17148 22892 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-25 20:23:31,662 basehttp 17148 25196 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-04-25 20:23:31,663 basehttp 17148 33680 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-04-25 20:23:31,671 basehttp 17148 7652 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-25 20:23:31,684 basehttp 17148 7652 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-25 20:23:31,750 basehttp 17148 7652 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-25 20:23:31,895 basehttp 17148 7652 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-04-25 20:23:31,903 basehttp 17148 33680 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-04-25 20:23:49,597 basehttp 17148 20784 "GET /admin/neurologists/treatmentorder/add/ HTTP/1.1" 200 17912
+INFO 2025-04-25 20:23:49,662 basehttp 17148 20784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-25 20:23:54,779 basehttp 17148 1112 "GET /admin/neurologists/consultation/add/ HTTP/1.1" 200 18995
+INFO 2025-04-25 20:23:55,730 basehttp 17148 1112 "GET /admin/neurologists/consultation/ HTTP/1.1" 200 14450
+WARNING 2025-04-25 20:24:09,349 log 17148 3760 Not Found: /api
+WARNING 2025-04-25 20:24:09,350 basehttp 17148 3760 "GET /api HTTP/1.1" 404 2762
+WARNING 2025-04-25 20:24:19,602 log 17148 15020 Not Found: /patients
+WARNING 2025-04-25 20:24:19,603 basehttp 17148 15020 "GET /patients HTTP/1.1" 404 2777
+WARNING 2025-04-25 20:24:31,813 log 17148 13332 Not Found: /api/patients
+WARNING 2025-04-25 20:24:31,814 basehttp 17148 13332 "GET /api/patients HTTP/1.1" 404 2685
+WARNING 2025-04-25 20:24:50,890 log 17148 21644 Not Found: /api/patients/
+WARNING 2025-04-25 20:24:50,891 basehttp 17148 21644 "GET /api/patients/ HTTP/1.1" 404 2688
+WARNING 2025-04-25 20:24:59,732 log 17148 14852 Not Found: /api/neurologists/
+WARNING 2025-04-25 20:24:59,733 basehttp 17148 14852 "GET /api/neurologists/ HTTP/1.1" 404 2700
+WARNING 2025-04-25 20:25:04,867 log 17148 30544 Not Found: /neurologists/
+WARNING 2025-04-25 20:25:04,868 basehttp 17148 30544 "GET /neurologists/ HTTP/1.1" 404 2679
+INFO 2025-04-25 20:26:17,446 autoreload 17148 32712 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\api\views.py changed, reloading.
+INFO 2025-04-25 20:26:19,159 autoreload 19520 29604 Watching for file changes with StatReloader
+INFO 2025-04-25 20:26:41,248 autoreload 19520 29604 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\api\views.py changed, reloading.
+INFO 2025-04-25 20:26:41,866 autoreload 30192 5872 Watching for file changes with StatReloader
+INFO 2025-04-25 20:26:47,641 autoreload 30192 5872 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\api\serializers.py changed, reloading.
+INFO 2025-04-25 20:26:48,174 autoreload 34716 19032 Watching for file changes with StatReloader
+INFO 2025-04-25 20:26:52,807 autoreload 34716 19032 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\api\urls.py changed, reloading.
+INFO 2025-04-25 20:26:53,276 autoreload 6412 7024 Watching for file changes with StatReloader
+INFO 2025-04-25 20:28:03,593 autoreload 6412 7024 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\api\serializers.py changed, reloading.
+INFO 2025-04-25 20:28:04,494 autoreload 20784 24852 Watching for file changes with StatReloader
+INFO 2025-04-25 20:28:59,186 autoreload 20784 24852 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\api\views.py changed, reloading.
+INFO 2025-04-25 20:28:59,810 autoreload 1788 11644 Watching for file changes with StatReloader
+INFO 2025-04-25 20:30:49,813 autoreload 17932 1676 Watching for file changes with StatReloader
+WARNING 2025-04-25 20:30:55,807 log 1788 24308 Not Found: /
+WARNING 2025-04-25 20:30:55,813 basehttp 1788 24308 "GET / HTTP/1.1" 404 2735
+WARNING 2025-04-25 20:30:55,820 log 1788 31092 Not Found: /
+WARNING 2025-04-25 20:30:55,820 basehttp 1788 31092 "GET / HTTP/1.1" 404 2735
+WARNING 2025-04-25 20:30:55,829 log 1788 22016 Not Found: /
+WARNING 2025-04-25 20:30:55,829 basehttp 1788 22016 "GET / HTTP/1.1" 404 2735
+WARNING 2025-04-25 20:30:57,584 log 1788 22016 Not Found: /favicon.ico
+WARNING 2025-04-25 20:30:57,586 basehttp 1788 22016 "GET /favicon.ico HTTP/1.1" 404 2786
+WARNING 2025-04-25 20:30:57,596 log 1788 31092 Not Found: /favicon.ico
+WARNING 2025-04-25 20:30:57,596 basehttp 1788 31092 "GET /favicon.ico HTTP/1.1" 404 2786
+WARNING 2025-04-25 20:30:57,799 log 1788 31092 Not Found: /favicon.ico
+WARNING 2025-04-25 20:30:57,799 basehttp 1788 31092 "GET /favicon.ico HTTP/1.1" 404 2786
+INFO 2025-04-25 20:31:01,592 basehttp 1788 31092 "GET /api HTTP/1.1" 301 0
+WARNING 2025-04-25 20:31:01,725 log 1788 22016 Forbidden: /api/
+WARNING 2025-04-25 20:31:01,726 basehttp 1788 22016 "GET /api/ HTTP/1.1" 403 4883
+INFO 2025-04-25 20:31:02,025 basehttp 1788 20556 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-04-25 20:31:02,028 basehttp 1788 20556 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-04-25 20:31:02,031 basehttp 1788 20556 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-04-25 20:31:02,032 basehttp 1788 20556 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-04-25 20:31:02,034 basehttp 1788 24308 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-04-25 20:31:02,035 basehttp 1788 20556 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-04-25 20:31:02,036 basehttp 1788 24308 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-04-25 20:31:02,040 basehttp 1788 2976 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-04-25 20:31:02,043 basehttp 1788 26728 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-04-25 20:31:02,045 basehttp 1788 27416 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-04-25 20:31:02,045 basehttp 1788 22016 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-04-25 20:31:02,058 basehttp 1788 27416 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-04-25 20:31:19,539 basehttp 1788 16536 "GET /admin/ HTTP/1.1" 200 13110
+INFO 2025-04-25 20:31:19,655 basehttp 1788 16536 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,656 basehttp 1788 14864 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,657 basehttp 1788 14864 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,657 basehttp 1788 16536 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,659 basehttp 1788 14864 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,900 basehttp 1788 16536 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,900 basehttp 1788 14864 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,929 basehttp 1788 14864 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:19,929 basehttp 1788 16536 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-04-25 20:31:38,321 basehttp 1788 31440 "GET /api HTTP/1.1" 301 0
+INFO 2025-04-25 20:31:38,343 basehttp 1788 2288 "GET /api/ HTTP/1.1" 200 5883
+INFO 2025-04-25 20:31:38,418 basehttp 1788 2288 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-04-25 20:31:38,423 basehttp 1788 2288 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-04-25 20:31:38,429 basehttp 1788 2288 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-04-25 20:31:38,441 basehttp 1788 2288 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-04-25 20:31:38,447 basehttp 1788 2288 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-04-25 20:31:38,450 basehttp 1788 2288 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-04-25 20:31:38,453 basehttp 1788 2288 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-04-25 20:31:38,456 basehttp 1788 2288 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-04-25 20:31:38,458 basehttp 1788 2288 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-04-25 20:31:38,461 basehttp 1788 2288 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-04-25 20:31:38,464 basehttp 1788 2288 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-04-25 20:31:38,610 basehttp 1788 2288 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-04-25 20:31:42,353 basehttp 1788 27956 "GET /api/patients/ HTTP/1.1" 200 10010
+WARNING 2025-04-25 20:41:11,538 log 17932 35708 Not Found: /
+WARNING 2025-04-25 20:41:11,550 basehttp 17932 35708 "GET / HTTP/1.1" 404 2735
+WARNING 2025-04-25 20:41:23,721 log 17932 9852 Not Found: /patients
+WARNING 2025-04-25 20:41:23,723 basehttp 17932 9852 "GET /patients HTTP/1.1" 404 2777
+WARNING 2025-04-25 20:41:31,841 log 17932 11692 Forbidden: /api/
+WARNING 2025-04-25 20:41:31,842 basehttp 17932 11692 "GET /api/ HTTP/1.1" 403 4883
+INFO 2025-04-25 20:41:31,936 basehttp 17932 11692 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,946 basehttp 17932 21888 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,949 basehttp 17932 15932 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,950 basehttp 17932 8632 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,950 basehttp 17932 9004 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,952 basehttp 17932 19156 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,953 basehttp 17932 11692 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,956 basehttp 17932 21888 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,956 basehttp 17932 9004 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,958 basehttp 17932 8632 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,958 basehttp 17932 15932 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-04-25 20:41:31,976 basehttp 17932 15932 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-04-25 20:43:12,510 autoreload 17932 1676 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\urls.py changed, reloading.
+INFO 2025-04-25 20:43:14,110 autoreload 2504 2260 Watching for file changes with StatReloader
+INFO 2025-04-25 20:43:43,505 autoreload 2504 2260 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\urls.py changed, reloading.
+INFO 2025-04-25 20:43:44,184 autoreload 22352 20200 Watching for file changes with StatReloader
+INFO 2025-04-25 20:44:24,116 autoreload 22352 20200 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\urls.py changed, reloading.
+INFO 2025-04-25 20:44:24,747 autoreload 35428 26940 Watching for file changes with StatReloader
+INFO 2025-04-25 20:46:33,139 autoreload 17548 8516 Watching for file changes with StatReloader
+INFO 2025-04-25 20:46:38,041 basehttp 17548 21956 "GET / HTTP/1.1" 302 0
+WARNING 2025-04-25 20:46:38,131 log 17548 21956 Not Found: /accounts/login/
+WARNING 2025-04-25 20:46:38,132 basehttp 17548 21956 "GET /accounts/login/?next=/ HTTP/1.1" 404 3734
+INFO 2025-04-25 20:46:38,614 basehttp 17548 21956 "GET / HTTP/1.1" 302 0
+WARNING 2025-04-25 20:46:38,661 log 17548 21956 Not Found: /accounts/login/
+WARNING 2025-04-25 20:46:38,662 basehttp 17548 21956 "GET /accounts/login/?next=/ HTTP/1.1" 404 3734
+INFO 2025-04-25 20:46:39,018 basehttp 17548 21956 "GET / HTTP/1.1" 302 0
+WARNING 2025-04-25 20:46:39,136 log 17548 21956 Not Found: /accounts/login/
+WARNING 2025-04-25 20:46:39,138 basehttp 17548 21956 "GET /accounts/login/?next=/ HTTP/1.1" 404 3734
+INFO 2025-04-25 20:46:42,760 basehttp 17548 35456 "GET / HTTP/1.1" 302 0
+WARNING 2025-04-25 20:46:42,883 log 17548 35456 Not Found: /accounts/login/
+WARNING 2025-04-25 20:46:42,884 basehttp 17548 35456 "GET /accounts/login/?next=/ HTTP/1.1" 404 3734
+INFO 2025-04-25 20:46:50,392 basehttp 17548 17092 "GET / HTTP/1.1" 302 0
+WARNING 2025-04-25 20:46:50,419 log 17548 17092 Not Found: /accounts/login/
+WARNING 2025-04-25 20:46:50,421 basehttp 17548 17092 "GET /accounts/login/?next=/ HTTP/1.1" 404 3734
+INFO 2025-04-25 20:47:07,242 basehttp 17548 18684 "GET /admin HTTP/1.1" 301 0
+INFO 2025-04-25 20:47:07,292 basehttp 17548 12036 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-04-25 20:47:07,430 basehttp 17548 12036 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-04-25 20:47:07,718 basehttp 17548 32592 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-25 20:47:07,723 basehttp 17548 32592 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-25 20:47:07,750 basehttp 17548 11552 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-04-25 20:47:07,750 basehttp 17548 18660 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-25 20:47:07,750 basehttp 17548 7096 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-25 20:47:07,750 basehttp 17548 25116 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-25 20:47:07,751 basehttp 17548 12036 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-25 20:47:36,534 basehttp 17548 12344 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-04-25 20:47:36,582 basehttp 17548 12344 "GET /admin/ HTTP/1.1" 200 13110
+INFO 2025-04-25 20:47:36,661 basehttp 17548 12344 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-04-25 20:47:36,882 basehttp 17548 12344 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-25 20:47:36,882 basehttp 17548 35396 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-04-25 20:47:47,270 basehttp 17548 31968 "GET /patients HTTP/1.1" 301 0
+INFO 2025-04-25 20:47:47,309 basehttp 17548 29364 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-25 20:47:51,064 basehttp 17548 29364 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-25 20:47:52,127 basehttp 17548 29364 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-25 20:47:53,588 basehttp 17548 29364 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-25 20:47:54,992 basehttp 17548 29364 "GET /alerts/ HTTP/1.1" 200 6006
+INFO 2025-04-25 20:47:55,998 basehttp 17548 29364 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-25 20:47:56,777 basehttp 17548 29364 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-25 20:47:57,530 basehttp 17548 34988 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-25 20:47:58,865 basehttp 17548 34988 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-25 20:47:59,667 basehttp 17548 34988 "GET /consultations/ HTTP/1.1" 200 6042
+WARNING 2025-04-25 20:48:02,723 log 17548 34988 Not Found: /login/
+WARNING 2025-04-25 20:48:02,724 basehttp 17548 34988 "GET /login/ HTTP/1.1" 404 3700
+WARNING 2025-04-25 20:48:10,098 log 17548 15276 Not Found: /register/
+WARNING 2025-04-25 20:48:10,100 basehttp 17548 15276 "GET /register/ HTTP/1.1" 404 3709
+INFO 2025-04-25 20:49:41,576 autoreload 17548 8516 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\urls.py changed, reloading.
+INFO 2025-04-25 20:49:42,726 autoreload 9872 20280 Watching for file changes with StatReloader
+INFO 2025-04-25 20:49:50,358 autoreload 9872 20280 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\views.py changed, reloading.
+INFO 2025-04-25 20:49:51,030 autoreload 16680 35204 Watching for file changes with StatReloader
+INFO 2025-04-25 20:50:02,021 basehttp 16680 13608 "GET /register/ HTTP/1.1" 200 7129
+INFO 2025-04-25 20:50:10,752 basehttp 16680 24896 "GET /login/ HTTP/1.1" 200 6469
+INFO 2025-04-25 20:50:30,796 basehttp 16680 24896 "POST /login/ HTTP/1.1" 200 6665
+INFO 2025-04-25 20:50:41,616 basehttp 16680 30908 "POST /login/ HTTP/1.1" 302 0
+WARNING 2025-04-25 20:50:41,651 log 16680 30908 Not Found: /accounts/profile/
+WARNING 2025-04-25 20:50:41,651 basehttp 16680 30908 "GET /accounts/profile/ HTTP/1.1" 404 4101
+WARNING 2025-04-25 20:50:56,858 log 16680 30908 Not Found: /dashboard
+WARNING 2025-04-25 20:50:56,858 basehttp 16680 30908 "GET /dashboard HTTP/1.1" 404 4077
+INFO 2025-04-25 20:51:05,909 basehttp 16680 23448 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-25 20:51:11,071 basehttp 16680 17988 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-25 20:51:25,798 basehttp 16680 16608 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-25 20:51:27,137 basehttp 16680 16608 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-25 20:51:27,982 basehttp 16680 26520 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-25 20:51:29,359 basehttp 16680 26520 "GET /alerts/ HTTP/1.1" 200 6006
+INFO 2025-04-25 20:51:30,399 basehttp 16680 26520 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-25 20:52:05,814 autoreload 16680 35204 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\views.py changed, reloading.
+INFO 2025-04-25 20:52:06,900 autoreload 7668 22560 Watching for file changes with StatReloader
+INFO 2025-04-25 20:52:30,452 autoreload 7668 22560 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\urls.py changed, reloading.
+INFO 2025-04-25 20:52:31,299 autoreload 27556 22556 Watching for file changes with StatReloader
+INFO 2025-04-25 20:53:48,643 autoreload 27556 22556 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\stroke_system\urls.py changed, reloading.
+INFO 2025-04-25 20:53:49,770 autoreload 35436 8680 Watching for file changes with StatReloader
+INFO 2025-04-25 20:54:02,644 basehttp 35436 22744 "GET /login/ HTTP/1.1" 200 6469
+INFO 2025-04-25 20:54:18,799 basehttp 35436 35772 "POST /login/ HTTP/1.1" 200 6665
+INFO 2025-04-25 20:54:40,213 basehttp 35436 32964 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-04-25 20:54:40,297 basehttp 35436 32964 "GET /profile/ HTTP/1.1" 200 6712
+INFO 2025-04-26 01:31:46,683 basehttp 35436 7020 "GET /api/ HTTP/1.1" 200 5883
+INFO 2025-04-26 01:31:46,741 basehttp 35436 39432 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,741 basehttp 35436 7020 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,742 basehttp 35436 37284 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,746 basehttp 35436 39432 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,747 basehttp 35436 7020 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,747 basehttp 35436 37284 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,750 basehttp 35436 39432 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,750 basehttp 35436 7020 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,751 basehttp 35436 37284 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,752 basehttp 35436 39432 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:46,753 basehttp 35436 7020 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-26 01:31:51,335 basehttp 35436 21044 "GET /api/ HTTP/1.1" 200 5883
+INFO 2025-04-26 01:31:55,180 basehttp 35436 14552 "GET /admin/ HTTP/1.1" 200 13110
+INFO 2025-04-27 17:20:32,314 autoreload 4556 1576 Watching for file changes with StatReloader
+INFO 2025-04-27 17:22:13,506 autoreload 37124 24976 Watching for file changes with StatReloader
+INFO 2025-04-27 17:22:19,755 basehttp 37124 26828 "GET / HTTP/1.1" 200 8751
+WARNING 2025-04-27 17:22:22,903 log 37124 26828 Not Found: /favicon.ico
+WARNING 2025-04-27 17:22:22,904 basehttp 37124 26828 "GET /favicon.ico HTTP/1.1" 404 4207
+INFO 2025-04-27 17:22:27,924 basehttp 37124 24824 "GET /login/ HTTP/1.1" 200 6469
+INFO 2025-04-27 17:22:33,816 basehttp 37124 12136 "GET /api/ HTTP/1.1" 200 5883
+INFO 2025-04-27 17:22:33,964 basehttp 37124 12136 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,965 basehttp 37124 32484 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,972 basehttp 37124 32484 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,974 basehttp 37124 25536 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,974 basehttp 37124 32592 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,975 basehttp 37124 27028 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,976 basehttp 37124 25448 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,977 basehttp 37124 12136 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,979 basehttp 37124 32484 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,979 basehttp 37124 25536 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:33,980 basehttp 37124 32592 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:34,044 basehttp 37124 32592 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-04-27 17:22:36,788 basehttp 37124 32592 "GET /api/patients/ HTTP/1.1" 200 10010
+INFO 2025-04-27 17:22:40,498 basehttp 37124 18088 "GET /login/ HTTP/1.1" 200 6469
+INFO 2025-04-27 17:23:05,902 basehttp 37124 14160 "GET /login/ HTTP/1.1" 200 6469
+INFO 2025-04-27 17:23:09,328 basehttp 37124 34684 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-27 17:23:11,685 basehttp 37124 34684 "GET /admin/neurologists/neurologist/add/ HTTP/1.1" 200 16852
+INFO 2025-04-27 17:23:11,724 basehttp 37124 34684 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:11,724 basehttp 37124 40300 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:11,733 basehttp 37124 17224 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:11,737 basehttp 37124 17224 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:11,746 basehttp 37124 17948 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-27 17:23:11,948 basehttp 37124 40300 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-27 17:23:11,953 basehttp 37124 40300 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-27 17:23:11,958 basehttp 37124 40300 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-27 17:23:11,958 basehttp 37124 4856 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-27 17:23:11,963 basehttp 37124 40300 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-27 17:23:11,964 basehttp 37124 4856 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-27 17:23:11,976 basehttp 37124 34684 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-27 17:23:11,976 basehttp 37124 26520 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-27 17:23:11,977 basehttp 37124 17224 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-27 17:23:11,977 basehttp 37124 17948 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-27 17:23:12,024 basehttp 37124 26520 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-27 17:23:12,047 basehttp 37124 17224 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:12,047 basehttp 37124 26520 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:12,077 basehttp 37124 26520 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:12,078 basehttp 37124 34684 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-04-27 17:23:12,078 basehttp 37124 17224 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-04-27 17:23:12,079 basehttp 37124 17948 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-27 17:23:17,184 basehttp 37124 17948 "GET /login/ HTTP/1.1" 200 6469
+INFO 2025-04-27 17:23:40,345 basehttp 37124 40008 "GET /api/ HTTP/1.1" 200 5883
+INFO 2025-04-27 17:23:43,380 basehttp 37124 40008 "GET /api/consultations/ HTTP/1.1" 200 9991
+INFO 2025-04-27 17:23:52,377 basehttp 37124 28508 "GET /api/consultations/ HTTP/1.1" 200 9991
+INFO 2025-04-27 17:27:56,450 autoreload 16356 22656 Watching for file changes with StatReloader
+INFO 2025-04-27 17:28:02,227 basehttp 16356 11292 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-28 01:12:54,349 basehttp 16356 37040 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-28 01:12:59,351 basehttp 16356 2136 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-28 01:13:28,726 basehttp 16356 34612 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-28 01:13:30,869 basehttp 16356 34612 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-28 01:13:32,042 basehttp 16356 34148 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-28 01:13:33,445 basehttp 16356 34148 "GET /alerts/ HTTP/1.1" 200 6006
+INFO 2025-04-28 01:13:38,479 basehttp 16356 34148 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-28 01:13:40,032 basehttp 16356 34148 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-28 01:13:40,965 basehttp 16356 34148 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-28 01:13:46,659 basehttp 16356 27024 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-29 14:13:20,115 autoreload 19908 15208 Watching for file changes with StatReloader
+INFO 2025-04-29 14:13:29,517 basehttp 19908 38300 "GET / HTTP/1.1" 200 8751
+WARNING 2025-04-29 14:13:31,462 log 19908 38300 Not Found: /favicon.ico
+WARNING 2025-04-29 14:13:31,464 basehttp 19908 38300 "GET /favicon.ico HTTP/1.1" 404 4207
+INFO 2025-04-29 14:15:05,010 basehttp 19908 34632 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-29 15:12:50,961 basehttp 19908 19616 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-29 15:13:21,522 basehttp 19908 6024 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-30 20:41:00,274 autoreload 39296 34224 Watching for file changes with StatReloader
+INFO 2025-04-30 20:43:08,794 autoreload 4188 35764 Watching for file changes with StatReloader
+INFO 2025-04-30 20:43:32,218 basehttp 4188 22920 "GET / HTTP/1.1" 200 8751
+WARNING 2025-04-30 20:43:34,075 log 4188 22920 Not Found: /favicon.ico
+WARNING 2025-04-30 20:43:34,076 basehttp 4188 22920 "GET /favicon.ico HTTP/1.1" 404 4207
+INFO 2025-04-30 20:43:34,489 basehttp 4188 22920 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-30 20:43:38,745 basehttp 4188 19944 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-30 20:43:39,730 basehttp 4188 19944 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-30 20:43:40,778 basehttp 4188 19944 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-30 20:43:41,678 basehttp 4188 19944 "GET /alerts/ HTTP/1.1" 200 6006
+INFO 2025-04-30 20:43:42,805 basehttp 4188 19944 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-30 20:43:43,645 basehttp 4188 19944 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-30 20:43:44,331 basehttp 4188 19944 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-30 20:43:50,727 basehttp 4188 32916 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-30 20:46:19,204 basehttp 4188 28872 "GET /patients/ HTTP/1.1" 200 6013
+INFO 2025-04-30 20:46:22,547 basehttp 4188 9284 "GET /admin/patients/patient/add/ HTTP/1.1" 200 15939
+INFO 2025-04-30 20:46:22,696 basehttp 4188 22480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:46:22,834 basehttp 4188 34096 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-04-30 20:46:22,837 basehttp 4188 34096 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-04-30 20:46:22,841 basehttp 4188 34096 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-04-30 20:46:22,845 basehttp 4188 34096 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-04-30 20:46:22,847 basehttp 4188 34096 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-04-30 20:46:22,850 basehttp 4188 34096 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-04-30 20:46:22,853 basehttp 4188 9412 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-04-30 20:46:22,853 basehttp 4188 34096 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-04-30 20:46:22,855 basehttp 4188 9284 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-04-30 20:46:22,856 basehttp 4188 34096 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-04-30 20:46:22,857 basehttp 4188 25940 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-04-30 20:46:22,860 basehttp 4188 9412 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-04-30 20:46:22,863 basehttp 4188 25940 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-04-30 20:46:22,869 basehttp 4188 18724 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-04-30 20:46:22,871 basehttp 4188 22480 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-04-30 20:46:22,877 basehttp 4188 22480 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-04-30 20:46:22,877 basehttp 4188 18724 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-04-30 20:46:22,903 basehttp 4188 18724 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-04-30 20:46:22,916 basehttp 4188 18724 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-04-30 20:47:05,498 basehttp 4188 40384 "POST /admin/patients/patient/add/ HTTP/1.1" 302 0
+INFO 2025-04-30 20:47:05,523 basehttp 4188 40384 "GET /admin/patients/patient/add/ HTTP/1.1" 200 16188
+INFO 2025-04-30 20:47:05,609 basehttp 4188 40384 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:47:06,141 basehttp 4188 40384 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-04-30 20:47:44,858 basehttp 4188 12592 "POST /admin/patients/patient/add/ HTTP/1.1" 302 0
+INFO 2025-04-30 20:47:44,923 basehttp 4188 12592 "GET /admin/patients/patient/ HTTP/1.1" 200 16868
+INFO 2025-04-30 20:47:45,015 basehttp 4188 12592 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-04-30 20:47:45,022 basehttp 4188 24288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:47:45,041 basehttp 4188 12592 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-04-30 20:47:45,233 basehttp 4188 12592 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-04-30 20:47:45,239 basehttp 4188 12592 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-04-30 20:47:45,240 basehttp 4188 24288 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-04-30 20:48:17,687 basehttp 4188 22344 "GET /admin/ HTTP/1.1" 200 13863
+INFO 2025-04-30 20:48:17,771 basehttp 4188 22344 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-04-30 20:48:17,910 basehttp 4188 22344 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-04-30 20:48:24,042 basehttp 4188 22344 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-30 20:48:27,289 basehttp 4188 39564 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:48:39,512 basehttp 4188 39396 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:48:42,452 basehttp 4188 39396 "GET /neurologists/ HTTP/1.1" 200 6037
+INFO 2025-04-30 20:48:44,730 basehttp 4188 39396 "GET /admin/neurologists/neurologist/add/ HTTP/1.1" 200 16852
+INFO 2025-04-30 20:48:44,794 basehttp 4188 39396 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:49:33,443 basehttp 4188 15376 "POST /admin/neurologists/neurologist/add/ HTTP/1.1" 302 0
+INFO 2025-04-30 20:49:33,471 basehttp 4188 15376 "GET /admin/neurologists/neurologist/ HTTP/1.1" 200 15932
+INFO 2025-04-30 20:49:33,570 basehttp 4188 15376 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:49:37,305 basehttp 4188 24860 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-30 20:49:40,164 basehttp 4188 24860 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-30 20:49:42,994 basehttp 4188 24860 "GET /admin/neurologists/consultation/add/ HTTP/1.1" 200 19128
+INFO 2025-04-30 20:49:43,060 basehttp 4188 36536 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-04-30 20:49:43,062 basehttp 4188 24860 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-04-30 20:49:43,068 basehttp 4188 26396 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:49:43,834 basehttp 4188 26396 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-04-30 20:49:43,845 basehttp 4188 24860 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-04-30 20:49:59,247 basehttp 4188 5988 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-30 20:50:01,763 basehttp 4188 5988 "GET /neurologists/ HTTP/1.1" 200 6880
+INFO 2025-04-30 20:50:05,809 basehttp 4188 5988 "GET /admin/neurologists/neurologist/1/change/ HTTP/1.1" 200 17130
+INFO 2025-04-30 20:50:05,865 basehttp 4188 5988 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:50:10,672 basehttp 4188 8260 "GET /admin/auth/user/1/change/?_to_field=id&_popup=1 HTTP/1.1" 200 21491
+INFO 2025-04-30 20:50:10,748 basehttp 4188 8260 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:50:10,750 basehttp 4188 30072 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-04-30 20:50:10,751 basehttp 4188 23972 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO 2025-04-30 20:50:11,249 basehttp 4188 30072 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-04-30 20:50:48,212 basehttp 4188 20268 "POST /admin/auth/user/1/change/?_to_field=id&_popup=1 HTTP/1.1" 200 404
+INFO 2025-04-30 20:50:48,279 basehttp 4188 20268 "GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+INFO 2025-04-30 20:50:51,508 basehttp 4188 26436 "POST /admin/neurologists/neurologist/1/change/ HTTP/1.1" 302 0
+INFO 2025-04-30 20:50:51,527 basehttp 4188 26436 "GET /admin/neurologists/neurologist/ HTTP/1.1" 200 15960
+INFO 2025-04-30 20:50:51,593 basehttp 4188 26436 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:50:54,955 basehttp 4188 26436 "GET / HTTP/1.1" 200 8751
+INFO 2025-04-30 20:50:57,199 basehttp 4188 26436 "GET /consultations/ HTTP/1.1" 200 6042
+INFO 2025-04-30 20:50:59,521 basehttp 4188 26436 "GET /admin/neurologists/consultation/add/ HTTP/1.1" 200 19141
+INFO 2025-04-30 20:50:59,601 basehttp 4188 26436 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:52:35,004 basehttp 4188 34164 "POST /admin/neurologists/consultation/add/ HTTP/1.1" 302 0
+INFO 2025-04-30 20:52:35,045 basehttp 4188 34164 "GET /admin/neurologists/consultation/ HTTP/1.1" 200 17223
+INFO 2025-04-30 20:52:35,158 basehttp 4188 34164 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:52:35,453 basehttp 4188 34164 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-04-30 20:52:39,291 basehttp 4188 22716 "GET / HTTP/1.1" 200 9085
+INFO 2025-04-30 20:53:03,945 basehttp 4188 4976 "GET /neurologists/ HTTP/1.1" 200 6893
+INFO 2025-04-30 20:53:08,198 basehttp 4188 35232 "GET /neurologists/1/ HTTP/1.1" 200 8516
+INFO 2025-04-30 20:53:21,907 basehttp 4188 5972 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:53:26,132 basehttp 4188 5972 "GET /admin/patients/patient/1/change/ HTTP/1.1" 200 16230
+INFO 2025-04-30 20:53:26,217 basehttp 4188 5972 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:53:34,843 basehttp 4188 20580 "GET /admin/ HTTP/1.1" 200 15319
+INFO 2025-04-30 20:53:36,444 basehttp 4188 6156 "GET / HTTP/1.1" 200 9085
+INFO 2025-04-30 20:53:43,966 basehttp 4188 6156 "GET /neurologists/ HTTP/1.1" 200 6893
+INFO 2025-04-30 20:53:48,997 basehttp 4188 18928 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:54:24,203 basehttp 4188 15528 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:54:25,165 basehttp 4188 15528 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:54:26,082 basehttp 4188 15528 "GET /patients/ HTTP/1.1" 200 7512
+INFO 2025-04-30 20:54:27,830 basehttp 4188 15528 "GET /consultations/ HTTP/1.1" 200 6939
+INFO 2025-04-30 20:54:33,070 basehttp 4188 20000 "GET /alerts/ HTTP/1.1" 200 6006
+INFO 2025-04-30 20:54:35,410 basehttp 4188 20000 "GET /admin/alerts/alert/add/ HTTP/1.1" 200 22773
+INFO 2025-04-30 20:54:35,500 basehttp 4188 20000 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 20:54:36,175 basehttp 4188 20000 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-04-30 20:54:36,179 basehttp 4188 11204 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2025-04-30 21:00:54,157 basehttp 4188 14464 "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+INFO 2025-04-30 21:01:03,671 basehttp 4188 33252 "POST /admin/alerts/alert/add/ HTTP/1.1" 200 23308
+INFO 2025-04-30 21:01:03,779 basehttp 4188 33252 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 21:01:22,282 basehttp 4188 28856 "POST /admin/alerts/alert/add/ HTTP/1.1" 302 0
+INFO 2025-04-30 21:01:22,328 basehttp 4188 28856 "GET /admin/alerts/alert/ HTTP/1.1" 200 17460
+INFO 2025-04-30 21:01:22,416 basehttp 4188 28856 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-30 21:01:30,875 basehttp 4188 31304 "GET / HTTP/1.1" 200 9593
+INFO 2025-04-30 21:08:03,837 autoreload 4188 35764 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\patients\models.py changed, reloading.
+INFO 2025-04-30 21:08:05,667 autoreload 22236 26916 Watching for file changes with StatReloader
+INFO 2025-04-30 21:08:16,680 autoreload 22236 26916 C:\Users\gideo\OneDrive\Documents\Computer Science\CS 110 &120\Django\CS120-Project\patients\models.py changed, reloading.
+INFO 2025-04-30 21:08:17,509 autoreload 26336 17252 Watching for file changes with StatReloader

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Consultations - Stroke Management System{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Consultations</h2>
+    <a href="{% url 'admin:neurologists_consultation_add' %}" class="btn btn-primary">
+        <i class="fas fa-plus me-2"></i>Add New Consultation
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Patient</th>
+                        <th>Neurologist</th>
+                        <th>Status</th>
+                        <th>Diagnosis</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for consultation in consultations %}
+                    <tr>
+                        <td>{{ consultation.created_at|date:"M d, Y" }}</td>
+                        <td>{{ consultation.patient.name }}</td>
+                        <td>Dr. {{ consultation.neurologist.user.get_full_name }}</td>
+                        <td>
+                            <span class="status-badge status-{{ consultation.status|lower }}">
+                                {{ consultation.get_status_display }}
+                            </span>
+                        </td>
+                        <td>{{ consultation.diagnosis|truncatechars:50 }}</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="{% url 'consultation_detail' consultation.pk %}" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="{% url 'admin:neurologists_consultation_change' consultation.pk %}" class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="6" class="text-center">No consultations found</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %} 
